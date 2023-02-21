@@ -22,6 +22,15 @@ const routes: RouteRecordRaw[] = [
                 component: () => import(/* webpackChunkName: "dashboard" */ '../views/dashboard.vue'),
             },
             {
+                path: '/broker',
+                name: 'brokers',
+                meta: {
+                    title: '柜台',
+                    permiss: '2',
+                },
+                component: () => import(/* webpackChunkName: "broker" */ '../views/broker.vue'),
+            },
+            {
                 path: '/table',
                 name: 'basetable',
                 meta: {
